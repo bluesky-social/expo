@@ -34,7 +34,7 @@ class VideoManager {
     for videoPlayer in videoPlayers.allObjects {
       videoPlayer.setTracksEnabled(true)
     }
-    
+
     if let previouslyPlayingPlayers = self.previouslyPlayingPlayers {
       previouslyPlayingPlayers.forEach { player in
         player.pointer.play()
@@ -102,5 +102,5 @@ class VideoManager {
 //        log.warn("Failed to activate the audio session. This might cause issues with audio playback. \(error.localizedDescription)")
 //      }
 //    }
-//  }
+  }
 }
