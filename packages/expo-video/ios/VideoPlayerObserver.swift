@@ -62,7 +62,13 @@ final class WeakPlayerObserverDelegate: Hashable {
 class VideoPlayerObserver {
   weak var player: AVPlayer?
   var delegates = Set<WeakPlayerObserverDelegate>()
-  private var currentItem: VideoPlayerItem?
+  private var currentItem: VideoPlayerItem? {
+    didSet {
+      if currentItem != oldValue {
+        self.wasReadyToPlay = false
+      }
+    }
+  }
 
   private var isPlaying: Bool = false {
     didSet {
@@ -80,10 +86,14 @@ class VideoPlayerObserver {
         delegates.forEach { delegate in
           delegate.value?.onStatusChanged(player: player, oldStatus: oldValue, newStatus: status, error: error)
         }
+        if status == .readyToPlay {
+          self.wasReadyToPlay = true
+        }
       }
     }
   }
-
+  private var wasReadyToPlay: Bool = false
+  
   private var playerItemObserver: NSObjectProtocol?
   private var playerRateObserver: NSKeyValueObservation?
 
@@ -270,7 +280,7 @@ class VideoPlayerObserver {
 
     if player.timeControlStatus != .waitingToPlayAtSpecifiedRate && player.status == .readyToPlay && currentItem?.isPlaybackBufferEmpty != true {
       status = .readyToPlay
-    } else if player.timeControlStatus == .waitingToPlayAtSpecifiedRate {
+    } else if player.timeControlStatus == .waitingToPlayAtSpecifiedRate && !self.wasReadyToPlay {
       status = .waitingToPlayAtSpecifiedRate
     }
 
