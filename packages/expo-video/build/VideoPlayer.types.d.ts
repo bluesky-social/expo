@@ -155,6 +155,10 @@ export type VideoPlayerEvents = {
      * Handler for an event emitted when the current media source of the player changes.
      */
     sourceChange(newSource: VideoSource, previousSource: VideoSource): void;
+    /**
+     * Handler for time remaining change events
+     */
+    timeRemainingChange(secondsRemaining: number): void;
 };
 /**
  * Describes the current status of the player.
