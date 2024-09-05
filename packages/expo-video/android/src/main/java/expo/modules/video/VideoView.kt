@@ -296,14 +296,14 @@ class VideoView(context: Context, appContext: AppContext) : ExpoView(context, ap
 
     // Draw borders on top of the video
     if (borderDrawableLazyHolder.isInitialized()) {
-      val newLayoutDirection = if (I18nUtil.instance.isRTL(context)) {
+      val layoutDirection = if (I18nUtil.getInstance().isRTL(context)) {
         LAYOUT_DIRECTION_RTL
       } else {
         LAYOUT_DIRECTION_LTR
       }
 
       borderDrawable.apply {
-        layoutDirection = newLayoutDirection
+        resolvedLayoutDirection = layoutDirection
         setBounds(0, 0, width, height)
         draw(canvas)
       }

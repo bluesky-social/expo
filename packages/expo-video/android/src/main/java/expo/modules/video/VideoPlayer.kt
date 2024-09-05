@@ -241,7 +241,13 @@ class VideoPlayer(val context: Context, appContext: AppContext, source: VideoSou
     // Emits to the native listeners
     event.emit(this, listeners.mapNotNull { it.get() })
     // Emits to the JS side
-    emit(event.name, *event.arguments)
+    sendEventOnJSThread(event.name, *event.arguments)
+  }
+
+  fun sendEventOnJSThread(eventName: String, vararg args: Any?) {
+    appContext?.executeOnJavaScriptThread {
+      sendEvent(eventName, *args)
+    }
   }
 
   private fun addOrRemoveProgressTracker() {
