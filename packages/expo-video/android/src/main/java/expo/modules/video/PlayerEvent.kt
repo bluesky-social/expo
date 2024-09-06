@@ -42,7 +42,7 @@ sealed class PlayerEvent {
   }
 
   data class PlayerTimeRemainingChanged(val timeRemaining: Double): PlayerEvent() {
-    override val name = "timeRemainingChanged"
+    override val name = "timeRemainingChange"
     override val arguments = arrayOf(timeRemaining)
   }
 
