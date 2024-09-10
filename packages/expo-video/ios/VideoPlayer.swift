@@ -8,7 +8,6 @@ internal final class VideoPlayer: SharedRef<AVPlayer>, Hashable, VideoPlayerObse
   lazy var contentKeyManager = ContentKeyManager()
   let observer: VideoPlayerObserver
 
-  var loop = false
   private(set) var isPlaying = false
   private(set) var status: PlayerStatus = .idle
   var playbackRate: Float = 1.0 {
@@ -175,10 +174,8 @@ internal final class VideoPlayer: SharedRef<AVPlayer>, Hashable, VideoPlayerObse
 
   func onPlayedToEnd(player: AVPlayer) {
     safeEmit(event: "playToEnd")
-    if loop {
-      self.pointer.seek(to: .zero)
-      self.pointer.play()
-    }
+    self.pointer.seek(to: .zero)
+    self.pointer.play()
   }
 
   func onItemChanged(player: AVPlayer, oldVideoPlayerItem: VideoPlayerItem?, newVideoPlayerItem: VideoPlayerItem?) {

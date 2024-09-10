@@ -142,13 +142,6 @@ public final class VideoModule: Module {
         player.staysActiveInBackground = staysActive
       }
 
-      Property("loop") { player -> Bool in
-        return player.loop
-      }
-      .set { (player, loop: Bool) in
-        player.loop = loop
-      }
-
       Property("currentTime") { player -> Double in
         let currentTime = player.pointer.currentTime().seconds
         return currentTime.isNaN ? 0 : currentTime
