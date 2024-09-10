@@ -340,14 +340,15 @@ class VideoPlayerObserver {
     }
     
     if isPlaying {
-      self.playerPeriodicTimeObserver = player.addPeriodicTimeObserver(forInterval: CMTimeMakeWithSeconds(1.0, preferredTimescale: Int32(NSEC_PER_SEC)),
-                                                                       queue: nil) { event in
+      self.playerPeriodicTimeObserver = player.addPeriodicTimeObserver(forInterval: CMTimeMakeWithSeconds(1.0,
+                                                                                                          preferredTimescale: Int32(NSEC_PER_SEC)),
+                                                                       queue: nil) { [weak self] event in
         guard let duration = player.currentItem?.duration else {
           return
         }
         
         let timeRemaining = (duration.seconds - event.seconds).rounded()
-        self.onPlayerTimeRemainingChanged(player, timeRemaining)
+        self?.onPlayerTimeRemainingChanged(player, timeRemaining)
       }
     }
   }
