@@ -50,7 +50,7 @@
     "jsc-safe-url": "^0.2.4",
     "lightningcss": "~1.19.0",
     "minimatch": "^3.0.4",
-    "postcss": "~8.4.32",
+    "postcss": "~8.5.10",
     "resolve-from": "^5.0.0"
   },
   "devDependencies": {
