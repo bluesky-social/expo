@@ -4957,10 +4957,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@xmldom/xmldom@~0.7.7":
-  version "0.7.9"
-  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.7.9.tgz#7f9278a50e737920e21b297b8a35286e9942c056"
-  integrity sha512-yceMpm/xd4W2a85iqZyO09gTnHvXF6pyiWjD2jcOJs7hRoZtNNOO1eJlhHj1ixA+xip2hOyGn+LgcvLCMo5zXA==
+"@xmldom/xmldom@~0.8.13":
+  version "0.8.13"
+  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.8.13.tgz#00d1dd940b218dff2e49309d410d8bb212159225"
+  integrity sha512-KRYzxepc14G/CEpEGc3Yn+JKaAeT63smlDr+vjB8jRfgTBBI9wRj/nkQEO+ucV8p8I9bfKLWp37uHgFrbntPvw==
 
 "@yarnpkg/lockfile@^1.1.0":
   version "1.1.0"
@@ -8404,6 +8404,11 @@ expo-three@7.0.1:
   dependencies:
     "@expo/browser-polyfill" "^1.0.1"
     expo-asset-utils "~3.0.0"
+
+expo-video@1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/expo-video/-/expo-video-1.1.9.tgz#4213d60abb029f1520053c3126c8535a98e867f8"
+  integrity sha512-Q5JOz5RfwcdsI1giLLixO6PrGy/Dnaa/+bwRxr2MDPUKcI7iHXyNx9/lcuU1YDnpVAC01gfkhR9iDy/tdMeFjQ==
 
 exponential-backoff@^3.1.1:
   version "3.1.1"
