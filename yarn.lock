@@ -8405,6 +8405,11 @@ expo-three@7.0.1:
     "@expo/browser-polyfill" "^1.0.1"
     expo-asset-utils "~3.0.0"
 
+expo-video@1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/expo-video/-/expo-video-1.1.9.tgz#4213d60abb029f1520053c3126c8535a98e867f8"
+  integrity sha512-Q5JOz5RfwcdsI1giLLixO6PrGy/Dnaa/+bwRxr2MDPUKcI7iHXyNx9/lcuU1YDnpVAC01gfkhR9iDy/tdMeFjQ==
+
 exponential-backoff@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/exponential-backoff/-/exponential-backoff-3.1.1.tgz#64ac7526fe341ab18a39016cd22c787d01e00bf6"
@@ -8865,9 +8870,9 @@ fmerge@^1.2.0:
   integrity sha1-NumdKuJV4+4a9ma033gFU2cc9pI=
 
 follow-redirects@^1.0.0:
-  version "1.15.6"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.6.tgz#7f815c0cda4249c74ff09e95ef97c23b5fd0399b"
-  integrity sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.16.0.tgz#28474a159d3b9d11ef62050a14ed60e4df6d61bc"
+  integrity sha512-y5rN/uOsadFT/JfYwhxRS5R7Qce+g3zG97+JrtFZlC9klX/W5hD7iiLzScI4nZqUS7DNUdhPgw4xI8W2LuXlUw==
 
 fontfaceobserver@^2.1.0:
   version "2.1.0"
