@@ -109,7 +109,7 @@
     "undici": "^6.18.2",
     "unique-string": "~2.0.0",
     "wrap-ansi": "^7.0.0",
-    "ws": "^8.12.1"
+    "ws": "^8.20.1"
   },
   "taskr": {
     "requires": [
