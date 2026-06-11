@@ -127,9 +127,9 @@
     uuid "^8.0.0"
 
 "@grpc/grpc-js@~1.10.3":
-  version "1.10.8"
-  resolved "https://registry.yarnpkg.com/@grpc/grpc-js/-/grpc-js-1.10.8.tgz#99787785cd8335be861afd1cd485ae9f058e4484"
-  integrity sha512-vYVqYzHicDqyKB+NQhAc54I1QWCBLCrYG6unqOIcBTHx+7x8C9lcoLj3KVJXs2VB4lUbpWY+Kk9NipcbXYWmvg==
+  version "1.10.12"
+  resolved "https://registry.yarnpkg.com/@grpc/grpc-js/-/grpc-js-1.10.12.tgz#592d9025b2b9223f225bb2676b4772cb5ce6618b"
+  integrity sha512-Cn1e1MDS2kF6QsLHGIBGjWWOXtTpnGmnJ31nO9Jzn/plm8tbD/NSovX3BEi921M4CAPLjrQmP0OLEv2Qg51CPg==
   dependencies:
     "@grpc/proto-loader" "^0.7.13"
     "@js-sdsl/ordered-map" "^4.4.2"
