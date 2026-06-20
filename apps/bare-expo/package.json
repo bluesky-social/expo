@@ -70,7 +70,7 @@
     "test-suite": "*"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0",
+    "@babel/core": "^7.29.6",
     "@types/react": "~18.2.79",
     "babel-plugin-module-resolver": "^5.0.0",
     "babel-preset-expo": "~11.0.0",

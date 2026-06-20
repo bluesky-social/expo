@@ -22,7 +22,7 @@
     "react-native": "0.75.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.29.6"
   },
   "expo": {
     "autolinking": {
