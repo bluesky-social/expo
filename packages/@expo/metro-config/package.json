@@ -34,7 +34,7 @@
     "babel-transformer"
   ],
   "dependencies": {
-    "@babel/core": "^7.20.0",
+    "@babel/core": "^7.29.6",
     "@babel/generator": "^7.20.5",
     "@babel/parser": "^7.20.0",
     "@babel/types": "^7.20.0",

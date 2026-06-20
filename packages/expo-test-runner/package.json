@@ -27,7 +27,7 @@
     "expo-module": "expo-module"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.7",
+    "@babel/core": "^7.29.6",
     "@types/fs-extra": "^9.0.1",
     "@types/node": "^18.19.34",
     "@types/node-fetch": "^2.5.12",
