@@ -8405,6 +8405,11 @@ expo-three@7.0.1:
     "@expo/browser-polyfill" "^1.0.1"
     expo-asset-utils "~3.0.0"
 
+expo-video@1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/expo-video/-/expo-video-1.1.9.tgz#4213d60abb029f1520053c3126c8535a98e867f8"
+  integrity sha512-Q5JOz5RfwcdsI1giLLixO6PrGy/Dnaa/+bwRxr2MDPUKcI7iHXyNx9/lcuU1YDnpVAC01gfkhR9iDy/tdMeFjQ==
+
 exponential-backoff@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/exponential-backoff/-/exponential-backoff-3.1.1.tgz#64ac7526fe341ab18a39016cd22c787d01e00bf6"
@@ -17206,9 +17211,9 @@ webpod@^0:
   integrity sha512-cSwwQIeg8v4i3p4ajHhwgR7N6VyxAf+KYSSsY6Pd3aETE+xEU4vbitz7qQkB0I321xnhDdgtxuiSfk5r/FVtjg==
 
 websocket-driver@>=0.5.1:
-  version "0.7.4"
-  resolved "https://registry.yarnpkg.com/websocket-driver/-/websocket-driver-0.7.4.tgz#89ad5295bbf64b480abcba31e4953aca706f5760"
-  integrity sha512-b17KeDIQVjvb0ssuSDF2cYXSg2iztliJ4B9WdsuB6J952qCPKmnVq4DyW5motImXHDC1cBT/1UezrJVsKw5zjg==
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/websocket-driver/-/websocket-driver-0.7.5.tgz#569d22764ab21f2de20af0e74b411e8ae5a0fa46"
+  integrity sha512-ZL2+3c7kMBdIRCMz6l8jQMHyGVxj+UL+xVk74Ombiciboca8rHa15L86B19E5oh1pL9Ii/uj54gtsIrZGMo6zA==
   dependencies:
     http-parser-js ">=0.5.1"
     safe-buffer ">=5.1.0"
