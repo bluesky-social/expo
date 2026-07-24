@@ -57,7 +57,7 @@
     "expo-updates": "~0.25.0",
     "expo-web-browser": "~13.0.0",
     "graphql": "^15.3.0",
-    "immutable": "^4.0.0",
+    "immutable": "^4.3.9",
     "lodash": "^4.17.19",
     "lottie-react-native": "6.7.0",
     "path-to-regexp": "^1.8.0",
